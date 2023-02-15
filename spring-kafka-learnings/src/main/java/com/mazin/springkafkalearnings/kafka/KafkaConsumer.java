@@ -13,6 +13,6 @@ public class KafkaConsumer {
 
 	@KafkaListener(topics = "${spring.kafka.topic.mazin-json}", groupId = "${spring.kafka.consumer.group-id}")
 	public void consume(User user) {
-		LOGGER.info(String.format("Message recieved: ", user.toString()));
+		LOGGER.info(String.format("Message recieved: %s", user.toString()));
 	}
 }

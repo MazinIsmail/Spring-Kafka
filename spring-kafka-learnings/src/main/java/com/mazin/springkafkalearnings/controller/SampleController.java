@@ -18,7 +18,7 @@ public class SampleController {
 	public SampleController(KafkaProducer KafkaProducer) {
 		this.kafkaProducer = KafkaProducer;
 	}
-	
+
 	// http:localhost:8080/springkafka/publish
 	@PostMapping("/publish")
 	public ResponseEntity<String> publish(@RequestBody User user) {
